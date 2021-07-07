@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="calc-main">
+            <div class="input">
+                <input type="text" id = "inputValue" placeholder="0" class="result borderRadius">
+                <input type="text" id = "inputValue2" class="result">
+            </div>
+            <div class="btn-con-main">
+                <div class="btn-cont">
+                    <p onclick="clearResult()" class="btn darkGrey">C</p>
+                    <p onclick="backspace(input)" class="btn darkGrey">&#x2192; </p>
+                    <p onclick="getBtn('%')" class="btn darkGrey" onclick="input.value+='%'">%</p>
+                    <p onclick="getBtn('/')" class="btn orange">&#247;</p>
+                </div>
+
+
+
+                <div class="btn-cont">
+                    <p onclick="getBtn('7')" class="btn grey">7</p>
+                    <p onclick="getBtn('8')" class="btn grey">8</p>
+                    <p onclick="getBtn('9')" class="btn grey">9</p>
+                    <p onclick="getBtn('*')" class="btn orange">x</p>
+                </div>
+
+
+
+
+                <div class="btn-cont">
+                    <p onclick="getBtn('4')" class="btn grey">4</p>
+                    <p onclick="getBtn('5')" class="btn grey">5</p>
+                    <p onclick="getBtn('6')" class="btn grey">6</p>
+                    <p onclick="getBtn('-')" class="btn orange">-</p>
+                </div>
+
+                <div class="btn-cont">
+                    <p onclick="getBtn('3')" class="btn grey">3</p>
+                    <p onclick="getBtn('2')" class="btn grey">2</p>
+                    <p onclick="getBtn('1')" class="btn grey">1</p>
+                    <p onclick="getBtn('+')" class="btn orange">+</p>
+                </div>
+
+                <div class="btn-cont">
+                    <p onclick="getBtn('0')" class="btn borderRadiusLeft grey">0</p>
+                    <p onclick="getBtn('00')" class="btn grey">00</p>
+                    <p onclick="getBtn('.')" class="btn grey">.</p>
+                    <p onclick="operation(input)" class="btn borderRadiusRight darkOrange">=</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
